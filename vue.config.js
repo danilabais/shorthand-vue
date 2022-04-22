@@ -1,3 +1,4 @@
 module.exports = {
-    publicPath: '/shorthand-vue/'
+    publicPath: '/shorthand-vue/' 
+  
   }
