@@ -1,6 +1,6 @@
 # shorthand-vue
 Сайт по скорописи на клавиатуре.
-https://shorthand-d381a.web.app/
+https://danilabais.github.io/shorthand-vue/
 
 Тестовый акканут, если не хотите регистрировать новый: логин - test@test.ru, пароль - 12341234
 
