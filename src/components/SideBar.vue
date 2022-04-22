@@ -163,7 +163,7 @@ export default {
   justify-content: space-between;
 }
 .navigation img {
-  width: 23px;
+  width: 22px;
 }
 .img {
   max-width: 100%;
