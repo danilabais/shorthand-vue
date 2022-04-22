@@ -104,7 +104,7 @@ export default {
     error() {
       return this.$store.getters.getError;
     },
-    errorMsg: function () {
+    errorMsg () {
       return this.errors[this.error]
     },
     

@@ -57,10 +57,10 @@ export default {
     },
   },
   computed: {
-    speed: function () {
+    speed() {
       return ((this.result[2] / this.result[0]) * 60).toFixed();
     },
-    mistakes: function () {
+    mistakes() {
       return 100 - ((this.result[1] / this.result[2]) * 100).toFixed();
     },
     uid() {
@@ -77,7 +77,9 @@ export default {
           mistakes: this.mistakes,
           date: Date.now(),
         });
-    } catch {}
+    } catch (e) {
+      console.log(e)
+    }
   },
 };
 </script>

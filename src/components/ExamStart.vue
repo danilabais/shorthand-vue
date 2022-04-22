@@ -35,13 +35,21 @@ export default {
     };
   },
   computed: {
-    speedNaN: function () {
+    speedNaN() {
       return isNaN(((this.i / this.time) * 60).toFixed())
         ? "0"
         : ((this.i / this.time) * 60).toFixed();
     },
-    timeNaN: function () {
-      return !isFinite(isNaN(100 - ((this.mistakes / this.i) * 100).toFixed())? "0":100 -((this.mistakes / this.i) * 100).toFixed())?'0':isNaN(100 - ((this.mistakes / this.i) * 100).toFixed())? "0":100 -((this.mistakes / this.i) * 100).toFixed();
+    timeNaN() {
+      return !isFinite(
+        isNaN(100 - ((this.mistakes / this.i) * 100).toFixed())
+          ? "0"
+          : 100 - ((this.mistakes / this.i) * 100).toFixed()
+      )
+        ? "0"
+        : isNaN(100 - ((this.mistakes / this.i) * 100).toFixed())
+        ? "0"
+        : 100 - ((this.mistakes / this.i) * 100).toFixed();
     },
   },
   methods: {
